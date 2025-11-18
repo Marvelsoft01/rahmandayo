@@ -43,7 +43,7 @@ export const Blog = () => {
             <Card
               key={index}
               className="group cursor-pointer bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 overflow-hidden animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.15}s`, opacity: 0 }}
+              style={{ animationDelay: `${index * 0.15}s` }}
               onClick={() => window.open('https://docs.rahmandayo.com/', '_blank')}
             >
               <div className={`h-2 bg-gradient-to-r ${post.gradient} group-hover:h-3 transition-all duration-300`} />
