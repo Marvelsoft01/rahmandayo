@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Blog } from "@/components/Blog";
 
 export const Collaboration = () => {
   return (
@@ -15,7 +16,7 @@ export const Collaboration = () => {
         </div>
 
         <div className="space-y-6 mb-12">
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right">
             <h3 className="text-xl font-semibold text-foreground mb-2">
               AI / ML for Maintenance and Reliability Engineering
             </h3>
@@ -24,7 +25,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Technical Writing
             </h3>
@@ -33,7 +34,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               SEO Content Strategy for Technical Startups
             </h3>
@@ -42,7 +43,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.3s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Growth Systems that Connect Data, Tech, and Storytelling
             </h3>
@@ -52,7 +53,9 @@ export const Collaboration = () => {
           </div>
         </div>
 
-        <div className="text-center animate-scale-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
+        <Blog />
+
+        <div className="text-center animate-scale-in" style={{ animationDelay: "0.4s" }}>
           <Button 
             size="lg" 
             className="bg-gradient-accent text-primary-foreground shadow-glow hover:shadow-xl group"
