@@ -59,7 +59,7 @@ export const Collaboration = () => {
           <Button 
             size="lg" 
             className="bg-gradient-accent text-primary-foreground shadow-glow hover:shadow-xl group"
-            onClick={() => window.location.href = 'mailto:contact@abdulwahabdayo.com'}
+            onClick={() => window.location.href = 'mailto:dayo@marvelsoft.tech'}
           >
             Start a Conversation
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
