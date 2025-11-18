@@ -15,7 +15,7 @@ export const Collaboration = () => {
         </div>
 
         <div className="space-y-6 mb-12">
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft animate-slide-in-right" style={{ opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ opacity: 0 }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               AI / ML for Maintenance and Reliability Engineering
             </h3>
@@ -24,7 +24,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Technical Writing
             </h3>
@@ -33,7 +33,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               SEO Content Strategy for Technical Startups
             </h3>
@@ -42,7 +42,7 @@ export const Collaboration = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft animate-slide-in-right" style={{ animationDelay: "0.3s", opacity: 0 }}>
+          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.3s", opacity: 0 }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Growth Systems that Connect Data, Tech, and Storytelling
             </h3>
