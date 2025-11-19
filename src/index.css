@@ -8,119 +8,125 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 97%;
-    --foreground: 215 25% 15%;
+    /* Light mode - Futuristic theme */
+    --background: 220 20% 96%;
+    --foreground: 220 40% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 220 40% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 220 40% 10%;
 
-    --primary: 200 75% 25%;
+    --primary: 260 85% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 60% 95%;
-    --secondary-foreground: 200 75% 25%;
+    --secondary: 200 80% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 20% 50%;
 
-    --accent: 35 85% 55%;
+    --accent: 280 90% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 200 75% 25%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 260 85% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Custom design tokens */
-    --ocean-deep: 200 75% 25%;
-    --ocean-light: 195 65% 45%;
-    --ocean-subtle: 200 60% 95%;
-    --amber-warm: 35 85% 55%;
-    --amber-light: 35 95% 85%;
+    /* Custom design tokens - futuristic */
+    --cyber-primary: 260 85% 60%;
+    --cyber-secondary: 200 80% 50%;
+    --cyber-accent: 280 90% 65%;
+    --neon-glow: 180 100% 50%;
+    --electric-blue: 200 100% 60%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(200 75% 25%), hsl(195 65% 45%));
-    --gradient-card: linear-gradient(to bottom right, hsl(0 0% 100%), hsl(200 60% 97%));
-    --gradient-accent: linear-gradient(135deg, hsl(200 65% 45%), hsl(35 85% 55%));
+    /* Gradients - futuristic */
+    --gradient-hero: linear-gradient(135deg, hsl(260 85% 60%), hsl(200 80% 50%), hsl(280 90% 65%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(220 20% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(260 85% 60%), hsl(280 90% 65%));
+    --gradient-cyber: linear-gradient(90deg, hsl(260 85% 60%), hsl(180 100% 50%), hsl(280 90% 65%));
     
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(200 75% 25% / 0.1);
-    --shadow-glow: 0 0 40px -10px hsl(200 65% 45% / 0.3);
+    /* Shadows - futuristic glow */
+    --shadow-soft: 0 4px 20px -4px hsl(260 85% 60% / 0.15);
+    --shadow-glow: 0 0 60px -10px hsl(260 85% 60% / 0.4), 0 0 30px -10px hsl(280 90% 65% / 0.3);
+    --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.6), 0 0 40px hsl(260 85% 60% / 0.4);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 220 40% 10%;
+    --sidebar-primary: 260 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 94%;
+    --sidebar-accent-foreground: 220 40% 10%;
+    --sidebar-border: 220 20% 88%;
+    --sidebar-ring: 260 85% 60%;
   }
 
   .dark {
-    --background: 215 30% 8%;
-    --foreground: 210 40% 98%;
+    /* Dark mode - Futuristic cyberpunk theme */
+    --background: 240 15% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 215 28% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 12% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 215 28% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 12% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 195 65% 55%;
-    --primary-foreground: 215 30% 8%;
+    --primary: 260 90% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 25% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 200 85% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 25% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 10% 18%;
+    --muted-foreground: 240 8% 65%;
 
-    --accent: 35 85% 60%;
-    --accent-foreground: 215 30% 8%;
+    --accent: 280 95% 70%;
+    --accent-foreground: 240 15% 6%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 20%;
-    --input: 215 25% 20%;
-    --ring: 195 65% 55%;
+    --border: 240 10% 20%;
+    --input: 240 10% 18%;
+    --ring: 260 90% 65%;
     
-    /* Custom design tokens - dark mode */
-    --ocean-deep: 195 65% 55%;
-    --ocean-light: 195 75% 65%;
-    --ocean-subtle: 215 25% 20%;
-    --amber-warm: 35 85% 60%;
-    --amber-light: 35 80% 30%;
+    /* Custom design tokens - futuristic dark */
+    --cyber-primary: 260 90% 65%;
+    --cyber-secondary: 200 85% 55%;
+    --cyber-accent: 280 95% 70%;
+    --neon-glow: 180 100% 60%;
+    --electric-blue: 200 100% 65%;
     
-    /* Gradients - dark mode */
-    --gradient-hero: linear-gradient(135deg, hsl(215 30% 12%), hsl(195 65% 25%));
-    --gradient-card: linear-gradient(to bottom right, hsl(215 28% 12%), hsl(215 25% 15%));
-    --gradient-accent: linear-gradient(135deg, hsl(195 65% 45%), hsl(35 85% 55%));
+    /* Gradients - futuristic cyberpunk */
+    --gradient-hero: linear-gradient(135deg, hsl(240 15% 8%), hsl(260 60% 15%), hsl(280 50% 20%));
+    --gradient-card: linear-gradient(135deg, hsl(240 12% 10% / 0.8), hsl(240 15% 14%));
+    --gradient-accent: linear-gradient(135deg, hsl(260 90% 65%), hsl(280 95% 70%));
+    --gradient-cyber: linear-gradient(90deg, hsl(260 90% 65%), hsl(180 100% 60%), hsl(280 95% 70%));
     
-    /* Shadows - dark mode */
-    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
-    --shadow-glow: 0 0 40px -10px hsl(195 65% 55% / 0.2);
+    /* Shadows - neon glow effects */
+    --shadow-soft: 0 8px 32px -8px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 80px -10px hsl(260 90% 65% / 0.5), 0 0 40px -10px hsl(280 95% 70% / 0.4);
+    --shadow-neon: 0 0 30px hsl(180 100% 60% / 0.8), 0 0 60px hsl(260 90% 65% / 0.6);
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 240 12% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 260 90% 65%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 240 10% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 10% 20%;
+    --sidebar-ring: 260 90% 65%;
   }
 }
 
