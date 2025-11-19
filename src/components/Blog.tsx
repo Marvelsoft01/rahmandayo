@@ -21,18 +21,18 @@ const blogPosts = [
 
 export const Blog = () => {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-background">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in-up px-2">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
             Technical Insights
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Exploring the intersection of AI, maintenance engineering, and growth strategies
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12">
           {blogPosts.map((post, index) => (
             <Card
               key={index}
