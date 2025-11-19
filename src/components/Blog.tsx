@@ -32,17 +32,17 @@ export const Blog = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 gap-12">
           {blogPosts.map((post, index) => (
             <Card
               key={index}
-              className="group cursor-pointer bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 overflow-hidden animate-fade-in-up"
+              className="group cursor-pointer bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 overflow-hidden animate-fade-in-up min-h-[280px]"
               style={{ animationDelay: `${index * 0.15}s` }}
               onClick={() => window.open(post.url, '_blank')}
             >
               <div className={`h-2 bg-gradient-to-r ${post.gradient} group-hover:h-3 transition-all duration-300`} />
-              <div className="p-6 flex flex-col h-full">
-                <h3 className="text-xl font-bold text-foreground mb-6 font-['Space_Grotesk'] line-clamp-2 group-hover:text-accent transition-colors duration-300 flex-grow">
+              <div className="p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold text-foreground mb-8 font-['Space_Grotesk'] group-hover:text-accent transition-colors duration-300 flex-grow leading-relaxed">
                   {post.title}
                 </h3>
 
