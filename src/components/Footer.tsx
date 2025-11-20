@@ -16,7 +16,7 @@ export const Footer = () => {
 
           <div className="flex gap-4">
             <a
-              href="https://www.linkedin.com/in/abdulwahab-rahman-dayo"
+              href="https://www.linkedin.com/in/abdulwahab-rahman-dayo-302665178/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors backdrop-blur-sm"

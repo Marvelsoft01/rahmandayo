@@ -51,7 +51,7 @@ export const Hero = () => {
                   size="lg" 
                   variant="outline" 
                   className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm"
-                  onClick={() => window.open('https://www.linkedin.com/in/abdulwahab-rahman-dayo', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/abdulwahab-rahman-dayo-302665178/', '_blank')}
                 >
                   <Linkedin className="h-5 w-5" />
                 </Button>
