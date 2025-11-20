@@ -17,6 +17,21 @@ const blogPosts = [
     url: "https://www.clickmaint.com/blog/llumin-cmms-alternatives",
     gradient: "from-accent to-amber-warm",
   },
+  {
+    title: "The Rise of MLaaS: How Cloud-Based AI Makes Predictive Maintenance Affordable for Every Business",
+    url: "https://maintafrica.com/2025/11/12/the-rise-of-mlaas-how-cloud-based-ai-makes-predictive-maintenance-affordable-for-every-business/",
+    gradient: "from-amber-warm to-ocean-deep",
+  },
+  {
+    title: "What is Electrical Preventive Maintenance?",
+    url: "https://maintenanceworld.com/2025/10/23/what-is-electrical-preventive-maintenance/",
+    gradient: "from-accent to-ocean-light",
+  },
+  {
+    title: "CMMS Data Migration Best Practices - Ensuring Smooth Transitions between Platforms",
+    url: "https://www.clickmaint.com/blog/cmms-data-migration-best-practices-ensuring-smooth-transitions-between-platforms",
+    gradient: "from-ocean-light to-amber-warm",
+  },
 ];
 
 export const Blog = () => {
