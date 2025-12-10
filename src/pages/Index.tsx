@@ -4,6 +4,7 @@ import { Expertise } from "@/components/Expertise";
 import { Blog } from "@/components/Blog";
 import { Collaboration } from "@/components/Collaboration";
 import { Footer } from "@/components/Footer";
+import { Chatbot } from "@/components/Chatbot";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Blog />
       <Collaboration />
       <Footer />
+      <Chatbot />
     </main>
   );
 };
