@@ -52,25 +52,23 @@ export const Blog = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12">
+        <div className="grid md:grid-cols-2 gap-6">
           {blogPosts.map((post, index) => (
             <Card
               key={index}
-              className="group cursor-pointer bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 overflow-hidden animate-fade-in-up min-h-[280px]"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              className="group cursor-pointer p-8 bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 overflow-hidden animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
               onClick={() => window.open(post.url, '_blank')}
             >
-              <div className={`h-2 bg-gradient-to-r ${post.gradient} group-hover:h-3 transition-all duration-300`} />
-              <div className="p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-foreground mb-8 font-['Space_Grotesk'] group-hover:text-accent transition-colors duration-300 flex-grow leading-relaxed">
-                  {post.title}
-                </h3>
-
-                <div className="flex items-center text-accent font-medium group-hover:gap-2 transition-all duration-300 mt-auto">
-                  Read Article
-                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
+              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${post.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <ArrowRight className="w-7 h-7 text-primary-foreground" />
               </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3 font-['Space_Grotesk'] group-hover:text-accent transition-colors duration-300">
+                {post.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Read Article →
+              </p>
             </Card>
           ))}
         </div>
