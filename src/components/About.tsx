@@ -1,7 +1,7 @@
 export const About = () => {
   return (
-    <section className="py-24 px-6 bg-background">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-24 bg-background">
+      <div className="container mx-auto max-w-6xl px-4">
         <div className="animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 font-['Space_Grotesk']">
             Where Code Meets Creativity

@@ -30,8 +30,8 @@ const expertiseAreas = [
 
 export const Expertise = () => {
   return (
-    <section className="py-24 px-6 bg-ocean-subtle/30">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-24 bg-ocean-subtle/30">
+      <div className="container mx-auto max-w-6xl px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
             Expertise Areas
