@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 export const Collaboration = () => {
   return (
-    <section id="collaboration" className="py-24 px-6 bg-background">
-      <div className="container mx-auto max-w-6xl">
+    <section id="collaboration" className="py-24 bg-background">
+      <div className="container mx-auto max-w-6xl px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
             Open to Collaboration
