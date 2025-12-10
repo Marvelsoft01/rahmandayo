@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Blog } from "@/components/Blog";
 
 export const Collaboration = () => {
   return (
     <section id="collaboration" className="py-24 px-6 bg-background">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
             Open to Collaboration
@@ -52,8 +51,6 @@ export const Collaboration = () => {
             </p>
           </div>
         </div>
-
-        <Blog />
 
         <div className="text-center animate-scale-in" style={{ animationDelay: "0.4s" }}>
           <Button 
