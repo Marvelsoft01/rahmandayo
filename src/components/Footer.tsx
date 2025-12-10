@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -30,15 +30,6 @@ export const Footer = () => {
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
-            </a>
-            <a
-              href="https://github.com/abdulwahabdayo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors backdrop-blur-sm"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5" />
             </a>
           </div>
         </div>

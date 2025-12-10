@@ -3,6 +3,11 @@ import { ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "A Smarter Way to Reinstall All Your Mac Apps: Practical Examples of Using Homebrew & Brewfiles",
+    url: "https://blog.marvelsoft.tech/2025/12/09/a-smarter-way-to-reinstall-all-your-mac-apps-real-examples-of-using-homebrew-brewfiles/",
+    gradient: "from-accent to-ocean-deep",
+  },
+  {
     title: "Unified Namespace + CMMS: Building an Integrated Asset Ecosystem",
     url: "https://www.clickmaint.com/blog/cmms-unified-namespace",
     gradient: "from-ocean-deep to-ocean-light",
