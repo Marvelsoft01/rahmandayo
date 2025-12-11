@@ -14,7 +14,7 @@ export const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm Dayo's AI assistant. 👋 How can I help you today? Feel free to ask about growth systems, AI/ML, technical writing, or collaboration opportunities!",
+      content: "Hi! I'm Dayo's AI assistant. 👋 How can I help you today? Feel free to ask about growth systems, automation, technical content, or SaaS marketing!",
     },
   ]);
   const [input, setInput] = useState("");

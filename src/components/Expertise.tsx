@@ -3,27 +3,27 @@ import { Card } from "@/components/ui/card";
 
 const expertiseAreas = [
   {
-    icon: Brain,
-    title: "AI/ML for Maintenance",
-    description: "Predictive maintenance models using AI and machine learning to forecast equipment health and reduce downtime.",
+    icon: TrendingUp,
+    title: "Growth Systems & Automation",
+    description: "Build systems that turn attention into predictable acquisition. Marketing, sales, and onboarding automation that scales.",
     gradient: "from-ocean-deep to-ocean-light",
   },
   {
     icon: FileText,
-    title: "Technical Writing",
-    description: "Clear, compelling technical documentation that makes complex concepts accessible to diverse audiences.",
+    title: "Technical Content & Docs",
+    description: "Technical articles, guides, and product documentation that users actually understand. Content engines that scale organically.",
     gradient: "from-ocean-light to-accent",
   },
   {
-    icon: TrendingUp,
-    title: "SEO Content Strategy",
-    description: "Data-driven content strategies for technical startups to improve visibility and reach target audiences.",
+    icon: Brain,
+    title: "SEO & Content Marketing",
+    description: "Data-driven content strategies, blog systems, and organic acquisition funnels for SaaS and developer tools.",
     gradient: "from-accent to-amber-warm",
   },
   {
     icon: Code2,
-    title: "Growth Systems",
-    description: "Connecting data, technology, and storytelling to build scalable growth systems for technical products.",
+    title: "Paid Ads & Acquisition",
+    description: "Landing pages, product messaging, email marketing, and paid campaigns that bring in qualified trials and demos.",
     gradient: "from-amber-warm to-ocean-deep",
   },
 ];
