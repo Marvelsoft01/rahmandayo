@@ -26,13 +26,13 @@ export const Hero = () => {
           
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-medium">
-              Building and marketing technical solutions
+              Growth Systems · Technical Content · Automation
             </p>
           </div>
           
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I help founders validate ideas faster, reach their audience, and grow sustainably.
+              I help SaaS founders and tech teams grow faster through clear storytelling, technical content, automation, and data-driven marketing systems.
             </p>
           </div>
 

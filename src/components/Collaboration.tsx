@@ -7,47 +7,47 @@ export const Collaboration = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
-            Open to Collaboration
+            Let's Work Together
           </h2>
           <p className="text-xl text-muted-foreground">
-            If your project lives where code meets creativity, we'll likely get along.
+            Open to collaborations with teams building at the intersection of tech, content, automation, and growth.
           </p>
         </div>
 
         <div className="space-y-6 mb-12">
           <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right">
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              AI / ML for Maintenance and Reliability Engineering
+              SaaS Startups
             </h3>
             <p className="text-muted-foreground">
-              Building intelligent systems that predict equipment health and optimize maintenance schedules.
+              Growth systems, content engines, and automation for early-stage and scaling SaaS products.
             </p>
           </div>
 
           <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              Technical Writing
+              AI / ML Product Teams
             </h3>
             <p className="text-muted-foreground">
-              Creating documentation, tutorials, and content that bridges technical complexity and user understanding.
+              Technical content, documentation, and go-to-market strategy for AI-powered products.
             </p>
           </div>
 
           <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              SEO Content Strategy for Technical Startups
+              Developer Tools
             </h3>
             <p className="text-muted-foreground">
-              Developing content strategies that help technical products get discovered and adopted.
+              Technical writing, API documentation, and developer marketing that resonates with engineers.
             </p>
           </div>
 
           <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              Growth Systems that Connect Data, Tech, and Storytelling
+              Founders Who Need the Full Stack
             </h3>
             <p className="text-muted-foreground">
-              Building scalable systems that combine technical infrastructure with compelling narratives.
+              Automation + technical writing + growth execution — all in one. From content to campaigns to conversion.
             </p>
           </div>
         </div>

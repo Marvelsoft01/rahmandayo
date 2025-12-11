@@ -4,20 +4,20 @@ export const About = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 font-['Space_Grotesk']">
-            Where Code Meets Creativity
+            Tech Meets Growth
           </h2>
         </div>
         
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p className="animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
-            With a background in <span className="text-foreground font-semibold">full-stack development</span>, 
-            <span className="text-foreground font-semibold"> marketing</span>, and 
-            <span className="text-foreground font-semibold"> technical writing</span>, I approach problems from both 
-            technical and storytelling perspectives.
+            My background blends <span className="text-foreground font-semibold">growth strategy</span>, 
+            <span className="text-foreground font-semibold"> automation</span>, 
+            <span className="text-foreground font-semibold"> technical writing</span>, and 
+            <span className="text-foreground font-semibold"> full-stack development</span> — giving me a unique ability to translate complex products into content, systems, and campaigns that attract users and drive revenue.
           </p>
           
           <p className="animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
-            I build products that work, and craft messages that resonate.
+            I understand how software works, and I know how to communicate and market it in ways that convert.
           </p>
           
           <div className="pt-6 animate-scale-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
@@ -26,12 +26,10 @@ export const About = () => {
                 Current Focus
               </h3>
               <p className="text-muted-foreground mb-4">
-                My current focus is on <span className="text-ocean-deep font-semibold">Predictive Maintenance (PdM)</span>, 
-                using <span className="text-ocean-deep font-semibold">AI and Machine Learning</span>.
+                I'm helping <span className="text-ocean-deep font-semibold">SaaS products</span> build growth systems that turn attention into predictable acquisition, automate marketing and onboarding workflows, and develop content engines that scale organically.
               </p>
               <p className="text-muted-foreground">
-                I'm exploring how PdM models can automate RUL (Remaining Useful Life) prediction across industries, 
-                helping maintenance and reliability engineers forecast equipment health and reduce downtime.
+                If your project lives at the intersection of <span className="text-ocean-deep font-semibold">tech, content, automation, and growth</span> — we'll work well together.
               </p>
             </div>
           </div>
