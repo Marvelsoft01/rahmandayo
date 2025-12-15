@@ -5,35 +5,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ0TT8SC0X"></script>
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  
+  <!-- Preconnect to critical origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  
+  <!-- Load fonts with font-display swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics - deferred loading -->
+  <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-SJ0TT8SC0X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-SJ0TT8SC0X');
+    gtag('config', 'G-SJ0TT8SC0X', { 'send_page_view': true });
   </script>
-  <title>Abdulwahab Rahman Dayo - Technical Solutions & Growth Strategy</title>
-  <meta name="description"
-    content="Building and marketing technical solutions. I help founders validate ideas faster, reach their audience, and grow sustainably. Specializing in AI/ML for Predictive Maintenance." />
+  
+  <title>Abdulwahab Rahman Dayo - SaaS Growth & Technical Content</title>
+  <meta name="description" content="I help SaaS founders and tech teams grow faster through clear storytelling, technical content, automation, and data-driven marketing systems." />
   <meta name="author" content="Abdulwahab Rahman Dayo" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet">
+  
+  <!-- Performance hints -->
+  <meta http-equiv="x-dns-prefetch-control" content="on">
 
-  <meta property="og:title" content="Abdulwahab Rahman Dayo - Technical Solutions & Growth Strategy" />
-  <meta property="og:description"
-    content="Building and marketing technical solutions. Specializing in AI/ML for Predictive Maintenance, technical writing, and growth systems." />
+  <meta property="og:title" content="Abdulwahab Rahman Dayo - SaaS Growth & Technical Content" />
+  <meta property="og:description" content="I help SaaS founders and tech teams grow faster through clear storytelling, technical content, automation, and data-driven marketing systems." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="#" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Abdulwahab Rahman Dayo - Technical Solutions & Growth Strategy" />
-  <meta name="twitter:description"
-    content="Building and marketing technical solutions. Specializing in AI/ML for Predictive Maintenance." />
+  <meta name="twitter:title" content="Abdulwahab Rahman Dayo - SaaS Growth & Technical Content" />
+  <meta name="twitter:description" content="I help SaaS founders and tech teams grow faster through clear storytelling, technical content, automation, and data-driven marketing systems." />
   <meta name="twitter:image" content="#" />
+  
+  <!-- Critical CSS inline for above-the-fold content -->
+  <style>
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; }
+    #root { min-height: 100vh; }
+  </style>
 </head>
 
 <body>
