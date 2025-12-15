@@ -17,7 +17,7 @@ const expertiseAreas = [
   {
     icon: Brain,
     title: "SEO & Content Marketing",
-    description: "Data-driven content strategies, blog systems, and organic acquisition funnels for SaaS and developer tools.",
+    description: "Data-driven content strategies, blog systems, explainer videos, and organic acquisition funnels for SaaS and developer tools.",
     gradient: "from-accent to-amber-warm",
   },
   {
