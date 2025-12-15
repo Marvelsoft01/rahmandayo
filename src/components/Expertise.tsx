@@ -31,7 +31,7 @@ const expertiseAreas = [
   {
     icon: Code2,
     title: "Paid Ads & Acquisition",
-    description: "Landing pages, product messaging, email marketing, and paid campaigns that bring in qualified trials and demos.",
+    description: "Landing pages, product messaging, email marketing, and paid campaigns that bring in qualified leads.",
     gradient: "from-amber-warm to-ocean-deep",
     image: paidAdsImg,
   },
