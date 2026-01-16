@@ -8,7 +8,7 @@ const Logo = ({ name, slug }: { name: string; slug: string }) => (
       <img
         src={`https://cdn.simpleicons.org/${slug}`}
         alt={name}
-        className="w-6 h-6 dark:invert dark:brightness-200"
+        className="w-6 h-6"
         loading="lazy"
       />
     </div>
