@@ -1,4 +1,4 @@
-import { Brain, FileText, TrendingUp, Code2 } from "lucide-react";
+import { Brain, FileText, TrendingUp, Code2, Cpu } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 // Logo component using Simple Icons CDN
@@ -28,7 +28,7 @@ const expertiseAreas = [
       { name: "Make", slug: "make" },
       { name: "n8n", slug: "n8n" },
       { name: "Salesforce", slug: "salesforce" },
-      { name: "Segment", slug: "segment" },
+      { name: "Twilio", slug: "twilio" },
     ],
   },
   {
@@ -51,7 +51,7 @@ const expertiseAreas = [
     description: "Data-driven content strategies, blog systems, explainer videos, and organic acquisition funnels for SaaS and developer tools.",
     gradient: "from-accent to-amber-warm",
     logos: [
-      { name: "Ahrefs", slug: "ahrefs" },
+      { name: "Google", slug: "google" },
       { name: "Semrush", slug: "semrush" },
       { name: "Webflow", slug: "webflow" },
       { name: "WordPress", slug: "wordpress" },
@@ -67,10 +67,24 @@ const expertiseAreas = [
     logos: [
       { name: "Google Ads", slug: "googleads" },
       { name: "Meta", slug: "meta" },
-      { name: "LinkedIn", slug: "linkedin" },
+      { name: "X", slug: "x" },
       { name: "Mailchimp", slug: "mailchimp" },
-      { name: "Klaviyo", slug: "klaviyo" },
+      { name: "Brevo", slug: "brevo" },
       { name: "Mixpanel", slug: "mixpanel" },
+    ],
+  },
+  {
+    icon: Cpu,
+    title: "Custom Solutions",
+    description: "Full-stack development, API integrations, and custom software solutions tailored to your business needs.",
+    gradient: "from-ocean-deep to-accent",
+    logos: [
+      { name: "React", slug: "react" },
+      { name: "Node.js", slug: "nodedotjs" },
+      { name: "TypeScript", slug: "typescript" },
+      { name: "Supabase", slug: "supabase" },
+      { name: "Vercel", slug: "vercel" },
+      { name: "GitHub", slug: "github" },
     ],
   },
 ];

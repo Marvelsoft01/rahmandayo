@@ -1,3 +1,5 @@
+import workspaceImage from "@/assets/workspace-setup.jpg";
+
 export const About = () => {
   return (
     <section className="py-24 bg-background">
@@ -8,30 +10,46 @@ export const About = () => {
           </h2>
         </div>
         
-        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-          <p className="animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
-            My background blends <span className="text-foreground font-semibold">growth strategy</span>, 
-            <span className="text-foreground font-semibold"> automation</span>, 
-            <span className="text-foreground font-semibold"> technical writing</span>, and 
-            <span className="text-foreground font-semibold"> full-stack development</span> — giving me a unique ability to translate complex products into content, systems, and campaigns that attract users and drive revenue.
-          </p>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left side - Text content */}
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
+              My background blends <span className="text-foreground font-semibold">growth strategy</span>, 
+              <span className="text-foreground font-semibold"> automation</span>, 
+              <span className="text-foreground font-semibold"> technical writing</span>, and 
+              <span className="text-foreground font-semibold"> full-stack development</span> — giving me a unique ability to translate complex products into content, systems, and campaigns that attract users and drive revenue.
+            </p>
+            
+            <p className="animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
+              I understand system design, and I know how to communicate and market it in ways that convert.
+            </p>
+          </div>
           
-          <p className="animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
-            I understand how software works, and I know how to communicate and market it in ways that convert.
-          </p>
-          
-          <div className="pt-6 animate-scale-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
-            <div className="bg-gradient-card p-8 rounded-2xl shadow-soft border border-border hover:shadow-glow transition-all duration-500">
-              <h3 className="text-2xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
-                Current Focus
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                I'm helping <span className="text-ocean-deep font-semibold">SaaS products</span> build growth systems that turn attention into predictable acquisition, automate marketing and onboarding workflows, and develop content engines that scale organically.
-              </p>
-              <p className="text-muted-foreground">
-                If your project lives at the intersection of <span className="text-ocean-deep font-semibold">tech, content, automation, and growth</span> — we'll work well together.
-              </p>
+          {/* Right side - Image */}
+          <div className="animate-scale-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-glow">
+              <img 
+                src={workspaceImage} 
+                alt="Workspace setup with multiple monitors" 
+                className="w-full h-auto object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
             </div>
+          </div>
+        </div>
+
+        {/* Current Focus - Full width below */}
+        <div className="pt-12 animate-scale-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
+          <div className="bg-gradient-card p-8 rounded-2xl shadow-soft border border-border hover:shadow-glow transition-all duration-500">
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
+              Current Focus
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              I'm helping <span className="text-ocean-deep font-semibold">founders</span> build growth systems that turn attention into predictable acquisition, automate marketing, onboarding workflows, and develop content engines that scale organically.
+            </p>
+            <p className="text-muted-foreground">
+              If your project lives at the intersection of <span className="text-ocean-deep font-semibold">tech innovation, content, automation, and growth</span> — we'll work well together.
+            </p>
           </div>
         </div>
       </div>
