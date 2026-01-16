@@ -1,51 +1,20 @@
 import { Brain, FileText, TrendingUp, Code2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { useState, useEffect, useRef } from "react";
 
-// Lazy load images only when they enter viewport
-const LazyImage = ({ src, alt, className }: { src: string; alt: string; className: string }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(false);
-  const imgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '100px' }
-    );
-
-    if (imgRef.current) {
-      observer.observe(imgRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div ref={imgRef} className={className}>
-      {isInView && (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          decoding="async"
-          onLoad={() => setIsLoaded(true)}
-          className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-      )}
-      {(!isInView || !isLoaded) && (
-        <div className="w-full h-full bg-muted animate-pulse" />
-      )}
+// Logo component using Simple Icons CDN
+const Logo = ({ name, slug }: { name: string; slug: string }) => (
+  <div className="flex flex-col items-center gap-1 group/logo">
+    <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm border border-border/50 transition-all duration-300 group-hover/logo:scale-110 group-hover/logo:border-primary/50">
+      <img
+        src={`https://cdn.simpleicons.org/${slug}`}
+        alt={name}
+        className="w-6 h-6 dark:invert dark:brightness-200"
+        loading="lazy"
+      />
     </div>
-  );
-};
+    <span className="text-[10px] text-muted-foreground/70 font-medium">{name}</span>
+  </div>
+);
 
 const expertiseAreas = [
   {
@@ -53,58 +22,80 @@ const expertiseAreas = [
     title: "Growth Systems & Automation",
     description: "Build systems that turn attention into predictable acquisition. Marketing, sales, and onboarding automation that scales.",
     gradient: "from-ocean-deep to-ocean-light",
-    image: () => import("@/assets/expertise-growth-automation.jpg"),
+    logos: [
+      { name: "HubSpot", slug: "hubspot" },
+      { name: "Zapier", slug: "zapier" },
+      { name: "Make", slug: "make" },
+      { name: "n8n", slug: "n8n" },
+      { name: "Salesforce", slug: "salesforce" },
+      { name: "Segment", slug: "segment" },
+    ],
   },
   {
     icon: FileText,
     title: "Technical Content & Docs",
     description: "Technical articles, guides, and product documentation that users actually understand. Content engines that scale organically.",
     gradient: "from-ocean-light to-accent",
-    image: () => import("@/assets/expertise-technical-docs.jpg"),
+    logos: [
+      { name: "Notion", slug: "notion" },
+      { name: "GitBook", slug: "gitbook" },
+      { name: "Docusaurus", slug: "docusaurus" },
+      { name: "Mintlify", slug: "mintlify" },
+      { name: "ReadMe", slug: "readme" },
+      { name: "Confluence", slug: "confluence" },
+    ],
   },
   {
     icon: Brain,
     title: "SEO & Content Marketing",
     description: "Data-driven content strategies, blog systems, explainer videos, and organic acquisition funnels for SaaS and developer tools.",
     gradient: "from-accent to-amber-warm",
-    image: () => import("@/assets/expertise-seo-content.jpg"),
+    logos: [
+      { name: "Ahrefs", slug: "ahrefs" },
+      { name: "Semrush", slug: "semrush" },
+      { name: "Webflow", slug: "webflow" },
+      { name: "WordPress", slug: "wordpress" },
+      { name: "Framer", slug: "framer" },
+      { name: "Loom", slug: "loom" },
+    ],
   },
   {
     icon: Code2,
     title: "Paid Ads & Acquisition",
     description: "Landing pages, product messaging, email marketing, and paid campaigns that bring in qualified leads.",
     gradient: "from-amber-warm to-ocean-deep",
-    image: () => import("@/assets/expertise-paid-ads.jpg"),
+    logos: [
+      { name: "Google Ads", slug: "googleads" },
+      { name: "Meta", slug: "meta" },
+      { name: "LinkedIn", slug: "linkedin" },
+      { name: "Mailchimp", slug: "mailchimp" },
+      { name: "Klaviyo", slug: "klaviyo" },
+      { name: "Mixpanel", slug: "mixpanel" },
+    ],
   },
 ];
 
 const ExpertiseCard = ({ area, index }: { area: typeof expertiseAreas[0]; index: number }) => {
-  const [imageSrc, setImageSrc] = useState<string>("");
   const Icon = area.icon;
-
-  useEffect(() => {
-    area.image().then((module) => setImageSrc(module.default));
-  }, [area]);
 
   return (
     <Card
       className="group overflow-hidden bg-gradient-card border-border/50 hover:shadow-glow transition-all duration-500 cursor-pointer animate-fade-in-up"
       style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
     >
-      <div className="relative h-48 overflow-hidden">
-        {imageSrc && (
-          <LazyImage
-            src={imageSrc}
-            alt={area.title}
-            className="w-full h-full"
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-        <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl bg-gradient-to-br ${area.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-          <Icon className="w-6 h-6 text-primary-foreground" />
+      <div className="relative p-6 pb-4">
+        {/* Logo grid */}
+        <div className="grid grid-cols-3 gap-4 mb-4">
+          {area.logos.map((logo) => (
+            <Logo key={logo.slug} name={logo.name} slug={logo.slug} />
+          ))}
+        </div>
+        {/* Icon badge */}
+        <div className={`absolute top-4 right-4 w-10 h-10 rounded-lg bg-gradient-to-br ${area.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+          <Icon className="w-5 h-5 text-primary-foreground" />
         </div>
       </div>
-      <div className="p-6">
+      <div className="p-6 pt-2 border-t border-border/30">
         <h3 className="text-2xl font-bold text-foreground mb-3 font-['Space_Grotesk']">
           {area.title}
         </h3>
