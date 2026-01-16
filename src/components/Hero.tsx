@@ -4,14 +4,29 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Video background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://blog.marvelsoft.tech/setup.mp4" type="video/mp4" />
+        </video>
+        {/* Gradient overlay for blending */}
+        <div className="absolute inset-0 bg-gradient-hero opacity-85" />
+      </div>
+
       {/* Theme toggle button */}
       <div className="absolute top-6 right-6 z-20">
         <ThemeToggle />
       </div>
 
       {/* Animated background elements - use will-change for GPU acceleration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-glow will-change-transform" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-glow will-change-transform" style={{ animationDelay: "1.5s" }} />
       </div>
