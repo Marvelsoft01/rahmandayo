@@ -1,40 +1,39 @@
-import workspaceImage from "@/assets/workspace-setup.jpg";
-
 export const About = () => {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 font-['Space_Grotesk']">
-            Tech Meets Growth
+            Building & Selling
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left side - Text content */}
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p className="animate-slide-in-right" style={{ animationDelay: "0.1s", opacity: 0 }}>
+        {/* 3D Card with text content */}
+        <div 
+          className="animate-scale-in bg-gradient-card p-8 rounded-2xl border border-border shadow-soft transition-all duration-500 hover:shadow-glow"
+          style={{ 
+            animationDelay: "0.1s", 
+            opacity: 0,
+            transform: "perspective(1000px)",
+            transformStyle: "preserve-3d"
+          }}
+        >
+          <div 
+            className="space-y-6 text-lg leading-relaxed text-muted-foreground"
+            style={{
+              transform: "translateZ(20px)"
+            }}
+          >
+            <p>
               My background blends <span className="text-foreground font-semibold">growth strategy</span>, 
               <span className="text-foreground font-semibold"> automation</span>, 
               <span className="text-foreground font-semibold"> technical writing</span>, and 
               <span className="text-foreground font-semibold"> full-stack development</span> — giving me a unique ability to translate complex products into content, systems, and campaigns that attract users and drive revenue.
             </p>
             
-            <p className="animate-slide-in-right" style={{ animationDelay: "0.2s", opacity: 0 }}>
+            <p>
               I understand system design, and I know how to communicate and market it in ways that convert.
             </p>
-          </div>
-          
-          {/* Right side - Image */}
-          <div className="animate-scale-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
-            <div className="relative rounded-2xl overflow-hidden shadow-glow">
-              <img 
-                src={workspaceImage} 
-                alt="Workspace setup with multiple monitors" 
-                className="w-full h-auto object-cover rounded-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-            </div>
           </div>
         </div>
 
