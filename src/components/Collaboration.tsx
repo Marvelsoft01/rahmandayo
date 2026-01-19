@@ -14,41 +14,81 @@ export const Collaboration = () => {
           </p>
         </div>
 
-        <div className="space-y-6 mb-12">
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right">
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              SaaS Startups
-            </h3>
-            <p className="text-muted-foreground">
-              Growth systems, content engines, and automation for early-stage and scaling SaaS products.
-            </p>
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div 
+            className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
+            style={{ 
+              animationDelay: "0.1s", 
+              opacity: 0,
+              transform: "perspective(1000px)",
+              transformStyle: "preserve-3d"
+            }}
+          >
+            <div className="transition-transform duration-300 group-hover:translate-z-4" style={{ transform: "translateZ(15px)" }}>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                SaaS Startups
+              </h3>
+              <p className="text-muted-foreground">
+                Growth systems, content engines, and automation for early-stage and scaling SaaS products.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.1s" }}>
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              AI / ML Product Teams
-            </h3>
-            <p className="text-muted-foreground">
-              Technical content, documentation, and go-to-market strategy for AI-powered products.
-            </p>
+          <div 
+            className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
+            style={{ 
+              animationDelay: "0.2s", 
+              opacity: 0,
+              transform: "perspective(1000px)",
+              transformStyle: "preserve-3d"
+            }}
+          >
+            <div className="transition-transform duration-300 group-hover:translate-z-4" style={{ transform: "translateZ(15px)" }}>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                AI / ML Product Teams
+              </h3>
+              <p className="text-muted-foreground">
+                Technical content, documentation, and go-to-market strategy for AI-powered products.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              Developer Tools
-            </h3>
-            <p className="text-muted-foreground">
-              Technical writing, API documentation, and developer marketing that resonates with engineers.
-            </p>
+          <div 
+            className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
+            style={{ 
+              animationDelay: "0.3s", 
+              opacity: 0,
+              transform: "perspective(1000px)",
+              transformStyle: "preserve-3d"
+            }}
+          >
+            <div className="transition-transform duration-300 group-hover:translate-z-4" style={{ transform: "translateZ(15px)" }}>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Developer Tools
+              </h3>
+              <p className="text-muted-foreground">
+                Technical writing, API documentation, and developer marketing that resonates with engineers.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              Founders Who Need the Full Stack
-            </h3>
-            <p className="text-muted-foreground">
-              Automation + technical writing + growth execution — all in one. From content to campaigns to conversion.
-            </p>
+          <div 
+            className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
+            style={{ 
+              animationDelay: "0.4s", 
+              opacity: 0,
+              transform: "perspective(1000px)",
+              transformStyle: "preserve-3d"
+            }}
+          >
+            <div className="transition-transform duration-300 group-hover:translate-z-4" style={{ transform: "translateZ(15px)" }}>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Founders Who Need the Full Stack
+              </h3>
+              <p className="text-muted-foreground">
+                Automation + technical writing + growth execution — all in one. From content to campaigns to conversion.
+              </p>
+            </div>
           </div>
         </div>
 

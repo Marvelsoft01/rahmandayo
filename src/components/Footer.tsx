@@ -10,7 +10,7 @@ export const Footer = () => {
               Dayo
             </h3>
             <p className="text-primary-foreground/80">
-              Where code meets creativity
+              Where Creativity meets Marketing
             </p>
           </div>
 
