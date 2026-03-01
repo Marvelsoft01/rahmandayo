@@ -27,8 +27,8 @@ const expertiseAreas = [
       { name: "Zapier", slug: "zapier" },
       { name: "Make", slug: "make" },
       { name: "n8n", slug: "n8n" },
-      { name: "Salesforce", slug: "salesforce" },
-      { name: "Twilio", slug: "twilio" },
+      { name: "Salesforce", slug: "salesforce/5264d5" },
+      { name: "Twilio", slug: "twilio/F22F46" },
     ],
   },
   {

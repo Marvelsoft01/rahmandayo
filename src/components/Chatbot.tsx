@@ -14,7 +14,7 @@ export const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm Dayo's AI assistant. 👋 How can I help you today? Feel free to ask about growth systems, automation, technical content, or SaaS marketing!",
+      content: "Hi! I'm Dayo's AI assistant. 👋 How can I help you today? Feel free to ask about growth systems, automation, technical content, or marketing!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -23,6 +23,7 @@ export const Chatbot = () => {
   const [leadName, setLeadName] = useState("");
   const [leadEmail, setLeadEmail] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const hasAutoOpened = useRef(false);
   const { toast } = useToast();
 
   const scrollToBottom = () => {
@@ -32,6 +33,16 @@ export const Chatbot = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Auto-open chat after 5 seconds
+  useEffect(() => {
+    if (hasAutoOpened.current) return;
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+      hasAutoOpened.current = true;
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const streamChat = async (userMessages: Message[]) => {
     const resp = await fetch(
