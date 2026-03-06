@@ -1,4 +1,4 @@
-import { Brain, FileText, TrendingUp, Code2, Cpu } from "lucide-react";
+import { Brain, FileText, TrendingUp, Code2, Cpu, Shield } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 // Logo component using Simple Icons CDN
