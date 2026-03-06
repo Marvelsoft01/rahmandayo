@@ -1,4 +1,4 @@
-import { Brain, FileText, TrendingUp, Code2, Cpu } from "lucide-react";
+import { Brain, FileText, TrendingUp, Code2, Cpu, Shield } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 // Logo component using Simple Icons CDN
@@ -71,6 +71,20 @@ const expertiseAreas = [
       { name: "Mailchimp", slug: "mailchimp" },
       { name: "Brevo", slug: "brevo" },
       { name: "Mixpanel", slug: "mixpanel" },
+    ],
+  },
+  {
+    icon: Shield,
+    title: "Cybersecurity & Ethical Hacking",
+    description: "Application security, vulnerability discovery, penetration testing, and secure architecture guided by OWASP principles.",
+    gradient: "from-rose-500 to-orange-500",
+    logos: [
+      { name: "Burp Suite", slug: "burpsuite" },
+      { name: "Wireshark", slug: "wireshark" },
+      { name: "Kali Linux", slug: "kalilinux" },
+      { name: "OWASP", slug: "owasp" },
+      { name: "Nmap", slug: "nmap" },
+      { name: "Metasploit", slug: "metasploit" },
     ],
   },
   {
