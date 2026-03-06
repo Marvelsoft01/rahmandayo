@@ -74,6 +74,20 @@ const expertiseAreas = [
     ],
   },
   {
+    icon: Shield,
+    title: "Cybersecurity & Ethical Hacking",
+    description: "Application security, vulnerability discovery, penetration testing, and secure architecture guided by OWASP principles.",
+    gradient: "from-rose-500 to-orange-500",
+    logos: [
+      { name: "Burp Suite", slug: "burpsuite" },
+      { name: "Wireshark", slug: "wireshark" },
+      { name: "Kali Linux", slug: "kalilinux" },
+      { name: "OWASP", slug: "owasp" },
+      { name: "Nmap", slug: "nmap" },
+      { name: "Metasploit", slug: "metasploit" },
+    ],
+  },
+  {
     icon: Cpu,
     title: "Custom Solutions",
     description: "Full-stack development, API integrations, and custom software solutions tailored to your business needs.",

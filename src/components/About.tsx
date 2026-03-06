@@ -11,35 +11,21 @@ export const About = () => {
           </h2>
         </div>
         
-        {/* Main content card */}
         <div 
           className="animate-scale-in bg-gradient-card p-8 rounded-2xl border border-border shadow-soft transition-all duration-500 hover:shadow-glow"
-          style={{ 
-            animationDelay: "0.1s", 
-            opacity: 0,
-            transform: "perspective(1000px)",
-            transformStyle: "preserve-3d"
-          }}
+          style={{ animationDelay: "0.1s", opacity: 0, transform: "perspective(1000px)", transformStyle: "preserve-3d" }}
         >
-          <div 
-            className="space-y-6 text-lg leading-relaxed text-muted-foreground"
-            style={{
-              transform: "translateZ(20px)"
-            }}
-          >
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground" style={{ transform: "translateZ(20px)" }}>
             <p>
               I help organizations build digital systems that <span className="text-foreground font-semibold">scale safely</span>.
             </p>
             <p>
-              My work sits at the intersection of <span className="text-foreground font-semibold">software development</span>, 
+              My work combines <span className="text-foreground font-semibold">software development</span>, 
               <span className="text-foreground font-semibold"> growth strategy</span>, and 
-              <span className="text-foreground font-semibold"> application security</span>. This combination allows me to look at products and platforms from a systems perspective — understanding how they grow, where complexity appears, and where security risks emerge.
+              <span className="text-foreground font-semibold"> application security</span>. I see products as systems: how they grow, where complexity builds, and where risks emerge.
             </p>
             <p>
-              As companies expand digitally, their attack surface expands with them. Growth without security creates exposure. My focus is on ensuring applications, APIs, and data infrastructure are designed with <span className="text-foreground font-semibold">security in mind from the start</span> — not added as a patch later.
-            </p>
-            <p>
-              My background includes full-stack development, automation systems, and digital growth strategy — allowing me to bridge the gap between technical teams, product direction, and business growth.
+              Growth without security creates exposure. I ensure applications, APIs, and infrastructure are <span className="text-foreground font-semibold">secure by design</span>, not patched after the fact.
             </p>
 
             <Button
@@ -59,15 +45,11 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Current Focus */}
         <div className="pt-12 animate-scale-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
           <div className="bg-gradient-card p-8 rounded-2xl shadow-soft border border-border hover:shadow-glow transition-all duration-500">
             <h3 className="text-2xl font-bold text-foreground mb-4 font-['Space_Grotesk']">
               Current Focus
             </h3>
-            <p className="text-muted-foreground mb-4">
-              My work often touches areas such as:
-            </p>
             <ul className="space-y-2 text-muted-foreground mb-6 list-disc list-inside">
               <li><span className="text-ocean-deep font-semibold">Application & Web Security</span></li>
               <li><span className="text-ocean-deep font-semibold">Secure Architecture & Threat Awareness</span></li>
@@ -75,7 +57,7 @@ export const About = () => {
               <li><span className="text-ocean-deep font-semibold">Automation</span> for marketing, security, and operations</li>
             </ul>
             <p className="text-muted-foreground">
-              My goal is simple: help teams scale their digital infrastructure <span className="text-ocean-deep font-semibold">without compromising resilience</span>. I'm always open to collaborating with organizations that care about building secure, reliable systems as they grow.
+              I help teams scale digital infrastructure <span className="text-ocean-deep font-semibold">without compromising resilience</span>. Open to collaborating with organizations building secure, reliable systems.
             </p>
           </div>
         </div>
