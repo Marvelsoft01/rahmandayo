@@ -41,13 +41,13 @@ export const Hero = () => {
           
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-medium">
-              Growth Systems · Technical Content · Automation
+              System Design · Growth Strategy · Cybersecurity
             </p>
           </div>
           
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I help founders and tech teams grow faster through clear storytelling, technical content, automation, and data-driven marketing systems.
+              I help teams scale digital infrastructure without compromising resilience, through secure architecture, growth systems, and automation.
             </p>
           </div>
 
