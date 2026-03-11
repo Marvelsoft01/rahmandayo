@@ -1,6 +1,3 @@
-import { Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
 export const About = () => {
   return (
     <section className="py-24 bg-background">
