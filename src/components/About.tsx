@@ -20,20 +20,6 @@ export const About = () => {
               As companies expand digitally, their attack surface expands. Growth without security creates exposure. My focus is on ensuring applications, APIs, and data infrastructure are <span className="text-foreground font-semibold">designed with security in mind from the start</span>, not added as a patch later.
             </p>
 
-            <Button
-              asChild
-              variant="outline"
-              className="mt-2 gap-2 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all"
-            >
-              <a
-                href="https://drive.google.com/file/d/1AfLLqbh1Vbqc5sJGS80xx0Ic0rtoHPIX/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Download className="h-4 w-4" />
-                Download CV
-              </a>
-            </Button>
           </div>
         </div>
 
