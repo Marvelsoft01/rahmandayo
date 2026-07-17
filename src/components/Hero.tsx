@@ -14,7 +14,7 @@ export const Hero = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://blog.marvelsoft.tech/setup.mp4" type="video/mp4" />
+          <source src="https://maintafrica.com/setup.mp4" type="video/mp4" />
         </video>
         {/* Gradient overlay for blending */}
         <div className="absolute inset-0 bg-gradient-hero opacity-85" />
