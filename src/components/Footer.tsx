@@ -10,7 +10,7 @@ export const Footer = () => {
               Dayo
             </h3>
             <p className="text-primary-foreground/80">
-              Where Creativity meets Marketing
+              Building Secure Technology. Driving Sustainable Growth
             </p>
           </div>
 
@@ -25,7 +25,7 @@ export const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:dayo@marvelsoft.tech"
+              href="mailto:hi@rahmandayo.com"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors backdrop-blur-sm"
               aria-label="Email"
             >

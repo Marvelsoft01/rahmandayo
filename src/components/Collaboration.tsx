@@ -15,10 +15,10 @@ export const Collaboration = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          <div 
+          <div
             className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
-            style={{ 
-              animationDelay: "0.1s", 
+            style={{
+              animationDelay: "0.1s",
               opacity: 0,
               transform: "perspective(1000px)",
               transformStyle: "preserve-3d"
@@ -34,10 +34,10 @@ export const Collaboration = () => {
             </div>
           </div>
 
-          <div 
+          <div
             className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
-            style={{ 
-              animationDelay: "0.2s", 
+            style={{
+              animationDelay: "0.2s",
               opacity: 0,
               transform: "perspective(1000px)",
               transformStyle: "preserve-3d"
@@ -53,10 +53,10 @@ export const Collaboration = () => {
             </div>
           </div>
 
-          <div 
+          <div
             className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
-            style={{ 
-              animationDelay: "0.3s", 
+            style={{
+              animationDelay: "0.3s",
               opacity: 0,
               transform: "perspective(1000px)",
               transformStyle: "preserve-3d"
@@ -72,10 +72,10 @@ export const Collaboration = () => {
             </div>
           </div>
 
-          <div 
+          <div
             className="bg-gradient-card p-6 rounded-xl border border-border shadow-soft hover:shadow-glow transition-all duration-500 animate-scale-in group cursor-pointer"
-            style={{ 
-              animationDelay: "0.4s", 
+            style={{
+              animationDelay: "0.4s",
               opacity: 0,
               transform: "perspective(1000px)",
               transformStyle: "preserve-3d"
@@ -93,10 +93,10 @@ export const Collaboration = () => {
         </div>
 
         <div className="text-center animate-scale-in" style={{ animationDelay: "0.4s" }}>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-gradient-accent text-primary-foreground shadow-glow hover:shadow-xl group"
-            onClick={() => window.location.href = 'mailto:dayo@marvelsoft.tech'}
+            onClick={() => window.location.href = 'https://www.linkedin.com/in/abdulwahab-rahman-dayo-302665178/'}
           >
             Start a Conversation
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

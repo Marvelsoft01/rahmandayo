@@ -15,7 +15,7 @@ const Index = () => {
       <Blog />
       <Collaboration />
       <Footer />
-      <Chatbot />
+      {/* <Chatbot /> */}
     </main>
   );
 };

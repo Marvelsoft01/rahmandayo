@@ -225,9 +225,8 @@ export const Chatbot = () => {
             {messages.map((message, index) => (
               <div
                 key={index}
-                className={`flex gap-2 ${
-                  message.role === "user" ? "justify-end" : "justify-start"
-                }`}
+                className={`flex gap-2 ${message.role === "user" ? "justify-end" : "justify-start"
+                  }`}
               >
                 {message.role === "assistant" && (
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -235,11 +234,10 @@ export const Chatbot = () => {
                   </div>
                 )}
                 <div
-                  className={`max-w-[75%] p-3 rounded-2xl text-sm ${
-                    message.role === "user"
+                  className={`max-w-[75%] p-3 rounded-2xl text-sm ${message.role === "user"
                       ? "bg-primary text-primary-foreground rounded-br-md"
                       : "bg-muted text-foreground rounded-bl-md"
-                  }`}
+                    }`}
                 >
                   {message.content}
                 </div>
