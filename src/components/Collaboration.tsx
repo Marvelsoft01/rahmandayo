@@ -29,7 +29,7 @@ export const Collaboration = () => {
                 SaaS Startups
               </h3>
               <p className="text-muted-foreground">
-                Growth systems, content engines, and automation for early-stage and scaling SaaS products.
+                Secure Growth systems, Technical writing, and Automation for early-stage and scaling SaaS products.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export const Collaboration = () => {
                 Founders Who Need the Full Stack
               </h3>
               <p className="text-muted-foreground">
-                Automation + technical writing + growth execution — all in one. From content to campaigns to conversion.
+                Security + Automation + Technical writing + Growth execution, all in one.  Secure systems enables Growth.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export const Collaboration = () => {
           <Button
             size="lg"
             className="bg-gradient-accent text-primary-foreground shadow-glow hover:shadow-xl group"
-            onClick={() => window.location.href = 'https://www.linkedin.com/in/abdulwahab-rahman-dayo-302665178/'}
+            onClick={() => window.location.href = 'https://www.linkedin.com/in/abdulwahab-rahman-dayo-302665178/c'}
           >
             Start a Conversation
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
